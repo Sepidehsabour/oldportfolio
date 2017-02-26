@@ -1,0 +1,12 @@
+# Site settings
+
+# Plugins
+gems: [kramdown]
+livereload: true # gem install guard, jekyll-guard
+
+# Build settings
+markdown: kramdown
+
+# Sass settings
+sass:
+  sass_dir: _sass

@@ -18,9 +18,7 @@ body {
 }
 
 #__background_container {
-    height: 100%;
-    width: 100%;
-    background-image: url(/images/background.svg);
+    background-image: url(../images/background.svg);
     background-size: 1920px 1080px;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -50,22 +48,19 @@ body {
 
 @font-face {
     font-family: 'Avenir'; 
-    src: url('/fonts/Avenir-Roman-Webfont.ttf');
+    src: url(../fonts/Avenir-Roman-Webfont.ttf);
 }
 
 #__nav_bar {
-    padding-right: 0;
-    padding-left: 0;
-    list-style: none;
-    text-align: center;
     margin-top: 36px;
+}
     li {
         display: inline;
-        margin-right: 45px;
+        padding: 40px;
         font-family: "Avenir";
         
     }
-}
+
     
 #__contact_bar {
     padding-right: 0;
@@ -74,13 +69,12 @@ body {
     margin-top: 36px;
     margin-right: 61px;
     text-align: right;
+}
     li {
         padding-right: 0;
-        margin-top: 36px;
-        margin-right:61px;
         text-align: right;
     }
-}    
+    
 
 #rectangle{
     width:100px;
@@ -89,5 +83,46 @@ body {
 }
 
 #__mobile_design {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
     
+}
+
+#__mobile_objects {
+    position: absolute;
+    top: 26%;
+    left: 56%;
+    margin-right: -44%;
+    transform: translate(-50%, -50%)
+}
+
+#__keyboard {
+   position: absolute;
+    top: 64%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+}
+
+@font-face {
+    font-family: 'Coves'; 
+    src: url(../fonts/Coves-Light.ttf);
+}
+
+#__slogan {
+    text-align: left;
+    width: 300px;
+	height: 75px;
+	font-family:"avenir-light-webfont";
+	font-size: 35px;
+	font-weight: 300;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.0;
+	letter-spacing: normal;
+	color: #264c44;
 }

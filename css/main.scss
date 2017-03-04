@@ -6,12 +6,12 @@
 
 @font-face {
   font-family: 'Avenir';
-  src: url(../fonts/avenir-roman-webfont.ttf);
+  src: url('/fonts/avenir-roman-webfont.ttf');
 }
 
 @font-face {
   font-family: 'Coves';
-  src: url(../fonts/coves-light.ttf);
+  src: url('/fonts/coves-light.ttf');
 }
 
 // ----------- general fixes
@@ -35,7 +35,7 @@ body {
 }
 
 #__background_container {
-    background-image: url(../images/background.svg);
+    background-image: url('/images/background.svg');
     background-size: 1920px 1080px;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -65,14 +65,13 @@ body {
 
 #__nav_bar {
     margin-top: 36px;
-}
     li {
         display: inline;
         padding: 40px;
         font-family: "Avenir";
-        
-    }
 
+    }
+}
     
 #__contact_bar {
     padding-right: 0;
@@ -81,12 +80,11 @@ body {
     margin-top: 36px;
     margin-right: 61px;
     text-align: right;
-}
     li {
         padding-right: 0;
         text-align: right;
     }
-    
+}
 
 #rectangle{
     width:100px;

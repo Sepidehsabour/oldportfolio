@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="/css/main.css">
   </head>
   <body>      
-  <div id="__background_container">
-    <div id="__main_container">
-        <div id="__main_header">
+  <div id="layer-common" class="__background_container">
+    <div class="__main_container">
+        <div class="__main_header">
             <div id="__logo_container" class="__main_header_subheader">
-                <img src="/images/logo.svg" width="113" height="31"/>
+              <span>Motive</span>
             </div>
             <div id="__navigator_container" class="__main_header_subheader">
                 <ul id="__nav_bar">
@@ -27,24 +27,53 @@
                 </ul> 
             </div>
         </div>
-        <div id="__main_body">
-            <div id="__mobile_design">
-                <img src="/images/iphone.svg" id="__mobile_design"  width="252px" height="516px"/>
+        <div class="__main_body">
+            <div class="__mobile_container">
+                <img id="__mobile_img" src="/images/iphone.svg"/>
+                <div class="__mobile_screen">
+                  <div id="__pin">
+                      <img src="/images/eyedropper.svg"/>
+                  </div>
+                  <div id="__keyboard">
+                      <img src="/images/keyboard.svg"/>
+                  </div>
+                </div>
             </div>
-            <div id="__mobile_objects">
-                <img src="/images/eyedropper.svg" id="__mobile_objects" width="161px" height="121px"/>
-            </div>
-            <div id="__keyboard">
-                <img src="/images/keyboard.svg" id="__keyboard" width="222px" height="394px"/>
-            </div>
-            <div id="__slogan">
-                <ul id="__slogan">
-                    <li>Our work combines Design & Development</li>
-                </ul>
+            <div id="__mobile_leftcontainer">
+              <div id="__slogan">
+                  Our work combines Design & Development
+              </div>
+              <div id="__viewprojects">
+                View Projects
+              </div>
             </div>
         </div>
       </div>
-</div>
-</body>    
+  </div>
+  <div id="layer-1" class="__background_container">
+    <div class="__main_container">
+      <div class="__main_header"></div>
+      <div class="__main_body">
+        <div class="__mobile_container">
+          <div class="__mobile_screen">
+            <span>SOMETHING</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--<div id="layer-2" class="__background_container">-->
+    <!--<div class="__main_container">-->
+      <!--<div class="__main_header"></div>-->
+      <!--<div class="__main_body">-->
+        <!--<div class="__mobile_container">-->
+          <!--<div class="__mobile_screen">-->
+            <!--SOMETHING-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</div>-->
+</body>
 <script src="http://localhost:35729/livereload.js"></script>
 </html>

@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/main.css">
+    <script language="javascript" src="js/jquery-3.1.1.js"></script>
+    <script language="javascript" src="js/main.js"></script>
   </head>
   <body>      
   <div id="layer-common" class="__background_container">
@@ -31,12 +33,6 @@
             <div class="__mobile_container">
                 <img id="__mobile_img" src="/images/iphone.svg"/>
                 <div class="__mobile_screen">
-                  <div id="__pin">
-                      <img src="/images/eyedropper.svg"/>
-                  </div>
-                  <div id="__keyboard">
-                      <img src="/images/keyboard.svg"/>
-                  </div>
                 </div>
             </div>
             <div id="__mobile_leftcontainer">
@@ -50,30 +46,59 @@
         </div>
       </div>
   </div>
-  <div id="layer-1" class="__background_container">
-    <div class="__main_container">
-      <div class="__main_header"></div>
-      <div class="__main_body">
-        <div class="__mobile_container">
-          <div class="__mobile_screen">
-            <span>SOMETHING</span>
+  <div id="layer-art">
+    <div class="__background_container overlay">
+      <div class="__main_container">
+        <div class="__main_header"></div>
+        <div class="__main_body">
+          <div class="__mobile_container">
+            <img class="__mobile_img" src="/images/iphone.svg"/>
+            <div class="__mobile_screen">
+              <div id="__pin">
+                <img src="/images/eyedropper.svg"/>
+              </div>
+              <div id="__palette" class="hide-with-opacity">
+                <img src="/images/palette.png"/>
+              </div>
+              <div id="__paint_bucket" class="hide-with-opacity">
+                <img src="/images/paint-bucket.png"/>
+              </div>
+              <div class="__keyboard">
+                <img src="/images/keyboard.svg"/>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <!--<div id="layer-2" class="__background_container">-->
-    <!--<div class="__main_container">-->
-      <!--<div class="__main_header"></div>-->
-      <!--<div class="__main_body">-->
-        <!--<div class="__mobile_container">-->
-          <!--<div class="__mobile_screen">-->
-            <!--SOMETHING-->
-          <!--</div>-->
-        <!--</div>-->
-      <!--</div>-->
-    <!--</div>-->
-  <!--</div>-->
+  <div id="layer-eng">
+    <div class="__background_container overlay">
+      <div class="__main_container">
+        <div class="__main_header"></div>
+        <div class="__main_body">
+          <div class="__mobile_container">
+            <img class="__mobile_img" src="/images/iphone.svg"/>
+            <div class="__mobile_screen">
+              <div id="__macintosh" class="hide-with-opacity">
+                <img src="/images/macintosh.png"/>
+              </div>
+              <div class="__keyboard">
+                <img src="/images/keyboard.svg"/>
+              </div>
+            </div>
+          </div>
+          <div id="__mobile_rightcontainer">
+            <div id="__slogan2">
+              Talk is cheap.<br/>
+              Show me the code.<br/>
+              Linus Torvalds<br/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 <script src="http://localhost:35729/livereload.js"></script>
 </html>

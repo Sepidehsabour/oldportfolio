@@ -64,37 +64,40 @@ body {
     overflow-x: hidden;
 }
 
+body.home {
+  background-color: #f0f0f0;
+}
+
 body {
-  #layer-art, #layer-eng, #layer-common {
+  .inner-container, .outer-container {
     position: absolute;
-    width: 100%;
+    width: 100vw;
     left: 0;
     top: 0;
   }
-  #layer-common {
-    position: relative;
-    z-index: 1000;
+  #layer-common-inner {
+    z-index: 300;
   }
-  #layer-art {
-    //display: none;
+  #layer-art-inner {
     z-index: 100;
   }
-  #layer-eng {
-    //display: none;
+  #layer-eng-outer {
     z-index: 200;
-    width: 50%;
+    width: 50vw;
+    height: 100%;
+    overflow-y: hidden;
     overflow-x: hidden;
     transition: $page-transition;
   }
-  #layer-eng.focused {
-    width: 100% !important;
+  #layer-eng-outer.focused {
+    width: 100vw !important;
   }
-  #layer-eng.unfocused {
+  #layer-eng-outer.unfocused {
     width: 0 !important;
   }
 }
 
-#layer-art .__background_container {
+#layer-art-inner .__background_container {
   background: url('/images/background.svg') no-repeat 50% 0;
   background-size: 1920px 1080px;
   .__mobile_screen {
@@ -120,7 +123,7 @@ body {
   }
 }
 
-#layer-eng .__background_container {
+#layer-eng-inner .__background_container {
   background: white;
   background-size: 1920px 1080px;
   #__macintosh {
@@ -134,14 +137,16 @@ body {
   }
 }
 
-#layer-common {
+#layer-common-inner {
   .__mobile_container {
     display: none;
   }
 }
 
 .__background_container {
-  width: 100vw;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
   height: 1080px;
   .__keyboard {
     position: absolute;

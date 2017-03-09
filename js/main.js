@@ -1,7 +1,6 @@
 $(document).ready(function () {
-  var body = $("body");
   function goArt() {
-    $("#layer-eng")
+    $("#layer-eng-outer")
       .addClass("unfocused")
       .removeClass("focused");
     $("#__paint_bucket, #__palette")
@@ -13,7 +12,7 @@ $(document).ready(function () {
   }
 
   function goEng() {
-    $("#layer-eng")
+    $("#layer-eng-outer")
       .removeClass("unfocused")
       .addClass("focused");
     $("#__paint_bucket, #__palette")
@@ -25,7 +24,7 @@ $(document).ready(function () {
   }
 
   function goNeutral() {
-    $("#layer-eng")
+    $("#layer-eng-outer")
       .removeClass("unfocused")
       .removeClass("focused");
     $("#__paint_bucket, #__palette")
@@ -35,10 +34,11 @@ $(document).ready(function () {
     $("#__macintosh")
       .addClass("hide-with-opacity");
   }
+  var body = $("#layer-common-inner .__background_container");
   body.mousemove(function (event) {
-    var mousePos = event.pageX * 100 / body.width();
-    if (mousePos <= 30) { goEng() }
-    else if (mousePos <= 70) { goNeutral(); }
+    var mousePos = (event.pageX - body.offset().left) * 100 / body.width();
+    if (mousePos <= 40) { goEng() }
+    else if (mousePos <= 60) { goNeutral(); }
     else { goArt(); }
   }).mouseout(function (event) {
     goNeutral();

@@ -34,13 +34,31 @@ $(document).ready(function () {
     $("#__macintosh")
       .addClass("hide-with-opacity");
   }
-  var body = $("#layer-common-inner .__background_container");
-  body.mousemove(function (event) {
-    var mousePos = (event.pageX - body.offset().left) * 100 / body.width();
-    if (mousePos <= 40) { goEng() }
-    else if (mousePos <= 60) { goNeutral(); }
-    else { goArt(); }
-  }).mouseout(function (event) {
-    goNeutral();
-  });
+
+  function goAccordingToMousePosition() {
+    var body = $("#layer-common-inner .__background_container");
+    body.mousemove(function (event) {
+      var mousePos = (event.pageX - body.offset().left) * 100 / body.width();
+      if (mousePos <= 40) {
+        goEng()
+      } else if (mousePos <= 60) {
+        goNeutral();
+      } else {
+        goArt();
+      }
+    }).mouseout(function (event) {
+      goNeutral();
+    });
+  }
+
+  function bindElementsWidth(ref, target) {
+    $(window).resize(function() {
+      target.width(ref.width());
+    });
+    target.width(ref.width());
+  }
+
+  bindElementsWidth($("#layer-art-inner"), $("#layer-eng-inner"));
+  goAccordingToMousePosition();
+
 });

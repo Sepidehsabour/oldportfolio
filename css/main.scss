@@ -61,17 +61,18 @@ body {
     width: 100%;
     height: 100%;
     color: $color-darkgreen;
-    overflow-x: hidden;
 }
 
 body.home {
-  background-color: #f0f0f0;
+    position: relative;
+    min-width: 1200px;
+    background-color: #f0f0f0;
 }
 
 body {
   .inner-container, .outer-container {
     position: absolute;
-    width: 100vw;
+    width: 100%;
     left: 0;
     top: 0;
   }
@@ -83,14 +84,14 @@ body {
   }
   #layer-eng-outer {
     z-index: 200;
-    width: 50vw;
-    height: 100%;
+    width: 50%;
+    height: 1080px;
     overflow-y: hidden;
     overflow-x: hidden;
     transition: $page-transition;
   }
   #layer-eng-outer.focused {
-    width: 100vw !important;
+    width: 100% !important;
   }
   #layer-eng-outer.unfocused {
     width: 0 !important;

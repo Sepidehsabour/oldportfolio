@@ -1,4 +1,9 @@
 $(document).ready(function () {
+  setupMainPage();
+  setupWhatPage();
+});
+
+function setupMainPage() {
   function goArt() {
     $("#layer-eng-outer")
       .addClass("unfocused")
@@ -60,5 +65,15 @@ $(document).ready(function () {
 
   bindElementsWidth($("#layer-art-inner"), $("#layer-eng-inner"));
   goAccordingToMousePosition();
+}
 
-});
+function setupWhatPage() {
+  $(document).ready(function(){
+    $('#__carousel_items_wrapper').slick({
+      dots: true,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 1
+    });
+  });
+}

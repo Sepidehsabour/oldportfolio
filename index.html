@@ -1,36 +1,17 @@
-<!doctype html>
+---
+# main styles file
+---
+
 <html class="no-js" lang="">
   <head>
-    <title>sabour website</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/css/main.css">
-    <script language="javascript" src="js/jquery-3.1.1.js"></script>
-    <script language="javascript" src="js/main.js"></script>
+    {% include website-head.html %}
   </head>
   <body class="home">
   <div id="layer-common-inner" class="inner-container">
     <div class="__background_container">
       <div class="__main_container">
-          <div class="__main_header">
-              <div id="__logo_container" class="__main_header_subheader">
-                <span>Motive</span>
-              </div>
-              <div id="__navigator_container" class="__main_header_subheader">
-                  <ul id="__nav_bar">
-                      <li>Home</li>
-                      <li>Who</li>
-                      <li>What</li>
-                      <li>Work</li>
-                  </ul>
-              </div>
-              <div id="__right_header_container" class="__main_header_subheader">
-                  <ul id="__contact_bar">
-                    <li>Contact</li>
-                  </ul>
-              </div>
-          </div>
-          <div class="__main_body">
+        {% include site-headerbar.html %}
+        <div class="__main_body">
               <div class="__mobile_container">
                   <img id="__mobile_img" src="/images/iphone.svg"/>
                   <div class="__mobile_screen">

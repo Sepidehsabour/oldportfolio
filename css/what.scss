@@ -1,0 +1,78 @@
+---
+# main styles file
+---
+
+body.what {
+  .__background_container {
+    background: url('/images/background-what.svg') no-repeat 50% 0;
+    background-size: 1920px 1080px;
+  }
+  .__main_body {
+    padding-top: 80px;
+  }
+}
+
+#__carousel_items_wrapper {
+  margin: 0 auto;
+  width: 1050px;
+}
+
+.__carousel_item {
+  position: relative;
+  height: 630px !important;
+  .__phone_img {
+    position: absolute;
+    right: 40px;
+  }
+  .__tablet_img {
+    position: absolute;
+    left: 130px;
+    top: 65px;
+  }
+  .__gramophone_img {
+    position: absolute;
+    top: 200px;
+  }
+}
+
+.__phone_img {
+  color: white;
+  padding-top: 180px;
+  font-family: Coves;
+  font-size: 60px;
+  text-align: center;
+  width: 280px;
+  height: 573px;
+  background: url("/images/phone.svg") no-repeat;
+}
+
+.__tablet_img {
+  font-family: Coves;
+  color: white;
+  padding: 120px 170px 0 130px;
+  text-align: justify;
+  font-size: 16px;
+  line-height: 17px;
+  width: 727px;
+  height: 448px;
+  background: url("/images/tablet.svg") no-repeat;
+}
+
+.__laptop_img {
+  padding: 130px 300px;
+  font-family: Coves;
+  text-align: justify;
+  font-size: 16px;
+  line-height: 18px;
+  color: white;
+  width: 1007px;
+  height: 543px;
+  background: url("/images/labtop.svg") no-repeat;
+  .title {
+    display: block;
+    font-size: 70px;
+    line-height: normal;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+}

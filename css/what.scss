@@ -4,8 +4,7 @@
 
 body.what {
   .__background_container {
-    background: url('/images/background-what.svg') no-repeat 50% 0;
-    background-size: 1920px 1080px;
+    background-image: url('/images/background-what.svg');
   }
   .__main_body {
     padding-top: 80px;
@@ -15,14 +14,15 @@ body.what {
 #__carousel_items_wrapper {
   margin: 0 auto;
   width: 1050px;
+  height: 630px;
 }
 
 .__carousel_item {
   position: relative;
-  height: 630px !important;
+  height: 700px !important;
   .__phone_img {
     position: absolute;
-    right: 40px;
+    right: 140px;
   }
   .__tablet_img {
     position: absolute;
@@ -32,6 +32,11 @@ body.what {
   .__gramophone_img {
     position: absolute;
     top: 200px;
+  }
+  .__gamepad_img {
+    position: absolute;
+    top: 440px;
+    right: 20px;
   }
 }
 
@@ -49,7 +54,7 @@ body.what {
 .__tablet_img {
   font-family: Coves;
   color: white;
-  padding: 120px 170px 0 130px;
+  padding: 120px 270px 0 130px;
   text-align: justify;
   font-size: 16px;
   line-height: 17px;

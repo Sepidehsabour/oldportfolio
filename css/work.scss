@@ -2,7 +2,7 @@
 # main styles file
 ---
 
-body.what {
+body.work{
   .__background_container {
     background-image: url('/images/background-work.svg');
   }
@@ -95,6 +95,15 @@ body.what {
   opacity: 0.4;
 }
 
+.works-body-column:first-child {
+  margin-left: 0;
+}
+
 .works-body-column {
+  margin-top: 5px;
+  margin-left: 5px;
   flex-grow: 1;
+  .single-work {
+    margin-bottom: 5px;
+  }
 }

@@ -7,7 +7,7 @@ body.what {
     background-image: url('/images/background-what.svg');
   }
   .__main_body {
-    padding-top: 80px;
+    padding-top: 0px;
   }
 }
 
@@ -20,24 +20,63 @@ body.what {
 .__carousel_item {
   position: relative;
   height: 700px !important;
+  .__laptop_img {
+    position: absolute;
+    top: 40px;  
+    }    
   .__phone_img {
     position: absolute;
+    top: 10px;
     right: 140px;
   }
   .__tablet_img {
     position: absolute;
     left: 130px;
-    top: 65px;
+    top: 80px;
   }
   .__gramophone_img {
     position: absolute;
-    top: 200px;
+    top: 240px;
   }
   .__gamepad_img {
     position: absolute;
     top: 440px;
     right: 20px;
   }
+  .__notebook_img {
+    position:absolute;
+    top:30px;
+    right:280px;  
+    }
+  .__glass_img {
+    position: absolute;
+    top:390px;
+    right:170px;  
+    }
+  .__envelope_img {
+    position: absolute;
+    top: 60px;
+    right: 250px;
+    }    
+    .__props_img {
+    position: absolute;
+    right:770px;    
+    }
+    .__floppy_img {
+    position: absolute;
+    top:320px;
+    right:225px;    
+    }
+    .__model_img {
+    position: absolute;
+    top: 460px;  
+    right:610px;    
+    }
+    .__pencil_img {
+    position: absolute;
+    top:280px;
+    right:280px;    
+    }
 }
 
 .__phone_img {
@@ -80,4 +119,23 @@ body.what {
     font-weight: bold;
     margin-bottom: 15px;
   }
+}
+
+.__notebook_img {
+    padding: 120px 80px 0 ;
+  font-family: Coves;
+  text-align: justify;
+  font-size: 16px;
+  line-height: 18px;
+  color: #264c44;
+  width: 453px;
+  height: 614px;
+  background: url("/images/notebook.png") no-repeat;
+    .title{
+        display: block;
+        font-size: 70px;
+        text-align: center;
+        line-height: 60px;
+        margin-bottom: 50px;
+    }
 }

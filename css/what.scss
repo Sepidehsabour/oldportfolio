@@ -46,17 +46,17 @@ body.what {
   .__notebook_img {
     position:absolute;
     top:30px;
-    right:280px;  
+    right:300px;  
     }
   .__glass_img {
     position: absolute;
     top:390px;
-    right:170px;  
+    right: 130px;  
     }
   .__envelope_img {
     position: absolute;
     top: 60px;
-    right: 250px;
+    right: 270px;
     }    
     .__props_img {
     position: absolute;
@@ -64,19 +64,30 @@ body.what {
     }
     .__floppy_img {
     position: absolute;
-    top:320px;
-    right:225px;    
+    top: 320px;
+    right: 190px;    
     }
     .__model_img {
     position: absolute;
     top: 460px;  
-    right:610px;    
+    right:650px;    
     }
     .__pencil_img {
     position: absolute;
     top:280px;
     right:280px;    
     }
+    .__chalkboard_img {
+    position: absolute;
+    top: 40px;
+    right: 0px;    
+    }
+    .__bomb_img {
+    position: absolute;
+    top: 270px;    
+    right: 610px;
+    }
+
 }
 
 .__phone_img {
@@ -115,14 +126,15 @@ body.what {
   .title {
     display: block;
     font-size: 70px;
+    text-align: center;  
     line-height: normal;
-    font-weight: bold;
+    font-weight: normal;
     margin-bottom: 15px;
   }
 }
 
 .__notebook_img {
-    padding: 120px 80px 0 ;
+  padding: 120px 130px 0 70px;
   font-family: Coves;
   text-align: justify;
   font-size: 16px;
@@ -136,6 +148,25 @@ body.what {
         font-size: 70px;
         text-align: center;
         line-height: 60px;
-        margin-bottom: 50px;
+        margin-bottom: 70px;
+    }
+}
+
+.__chalkboard_img {
+    padding: 100px 240px;
+    font-family: Coves;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 18px;
+    color: white;
+    weight: 0px;
+    height: 577px;
+    background: url("/images/chalkboard.png") no-repeat; 
+    .title{
+        display: block;
+        font-size: 70px;
+        text-align: center;
+        line-height: 60px;
+        margin-bottom: 30px;
     }
 }

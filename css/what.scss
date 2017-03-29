@@ -3,7 +3,7 @@
 ---
 
 body.what {
-  .__background_container {
+  .__background_container{
     background-image: url('/images/background-what.svg');
   }
   .__main_body {
@@ -51,7 +51,7 @@ body.what {
   .__glass_img {
     position: absolute;
     top:390px;
-    right: 130px;  
+    right: 140px;  
     }
   .__envelope_img {
     position: absolute;
@@ -80,12 +80,12 @@ body.what {
     .__chalkboard_img {
     position: absolute;
     top: 40px;
-    right: 0px;    
+    left: 150px;    
     }
     .__bomb_img {
     position: absolute;
-    top: 270px;    
-    right: 610px;
+    top: 360px;    
+    right: 630px;
     }
 
 }
@@ -153,13 +153,13 @@ body.what {
 }
 
 .__chalkboard_img {
-    padding: 100px 240px;
+    padding: 130px 200px;
+    margin-right: 130px;
     font-family: Coves;
     text-align: justify;
     font-size: 16px;
     line-height: 18px;
     color: white;
-    weight: 0px;
     height: 577px;
     background: url("/images/chalkboard.png") no-repeat; 
     .title{

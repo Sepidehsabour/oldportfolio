@@ -65,6 +65,7 @@ function setupMainPage() {
   }
 
   bindElementsWidth($("#layer-rear"), $("#layer-front"));
+  $("#layer-front-cover").animate({width: '50%'});
   goAccordingToMousePosition();
 }
 
@@ -74,18 +75,11 @@ function setupWhatPage() {
       dots: true,
       infinite: true,
       speed: 300,
+      accessibility: false,
       slidesToShow: 1
     });
   });
 }
 
 function setupContactPage() {
-  $(document).ready(function(){
-    $('#__carousel_items_wrapper').slick({
-      dots: true,
-      infinite: true,
-      speed: 300,
-      slidesToShow: 1
-    });
-  });
 }

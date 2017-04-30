@@ -149,4 +149,8 @@ body.work{
   right: 0;
   bottom: 0;
   display: block;
+  text-align: center;
+  img {
+    max-width: 100%;
+  }
 }

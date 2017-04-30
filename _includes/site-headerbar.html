@@ -4,15 +4,26 @@
   </div>
   <div id="__navigator_container" class="__main_header_subheader">
     <ul id="__nav_bar">
-      <li><a href="/">Home</a></li>
-      <li><a href="/who.html" >Who</a></li>
-      <li><a href="/what.html">What</a></li>
-      <li><a href="/work.html">Work</a></li>
+      <!--{{ include.page || inspect }}-->
+      <li>
+        {% if include.page == "home" %} <a class="current" href="/">Home</a>          {% else %} <a href="/">Home</a>          {% endif %}
+      </li>
+      <li>
+        {% if include.page == "who"  %} <a class="current" href="/who.html" >Who</a>  {% else %} <a href="/who.html" >Who</a>  {% endif %}
+      </li>
+      <li>
+        {% if include.page == "what" %} <a class="current" href="/what.html">What</a> {% else %} <a href="/what.html">What</a> {% endif %}
+      </li>
+      <li>
+        {% if include.page == "work" %} <a class="current" href="/work.html">Work</a> {% else %} <a href="/work.html">Work</a> {% endif %}
+      </li>
     </ul>
   </div>
   <div id="__right_header_container" class="__main_header_subheader">
     <ul id="__contact_bar">
-      <li><a href="/contact.html" >Contact</a></li>
+      <li>
+        {% if include.page == "contact" %} <a class="current" href="/contact.html">Contact</a> {% else %} <a href="/contact.html">Contact</a> {% endif %}
+      </li>
     </ul>
   </div>
 </div>

@@ -208,8 +208,14 @@ body {
 }
 
 .__main_header_subheader {
-    height: 100%;
-    width: 33.3333%
+  height: 100%;
+  width: 33.3333%;
+  pointer-events:auto;
+}
+
+.__main_header_subheader a.current {
+  cursor: default;
+  border-bottom: 1px solid;
 }
 
 #__nav_bar, #__contact_bar {
@@ -220,7 +226,6 @@ body {
 }
 
 #__nav_bar {
-  pointer-events:auto;
   list-style: none;
   text-align: center;
   margin-top: 62px;

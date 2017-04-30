@@ -26,9 +26,11 @@ var worksFlattened = [];
 
 for (var colIdx in works) {
   for (var rowIdx in works[colIdx]) {
-    works[colIdx][rowIdx].index = overalIdx;
-    overalIdx++;
-    worksFlattened.push(works[colIdx][rowIdx]);
+    if (works[colIdx][rowIdx].invisible !== true) {
+      works[colIdx][rowIdx].index = overalIdx;
+      overalIdx++;
+      worksFlattened.push(works[colIdx][rowIdx]);
+    }
   }
 }
 

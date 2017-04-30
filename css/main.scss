@@ -19,13 +19,39 @@ $font-weight-light: 300;
   font-style: normal;
   font-weight: normal;
 }
-
 @font-face {
   font-family: 'Avenir';
   src: url('/fonts/avenir-light-webfont.ttf') format('truetype');
   font-style: normal;
   font-weight: $font-weight-light;
 }
+@font-face {
+  font-family: 'Avenir';
+  src: url('/fonts/avenir-medium-webfont.ttf') format('truetype');
+  font-style: normal;
+  font-weight: $font-weight-medium;
+}
+
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('/fonts/raleway-regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Raleway';
+  src: url('/fonts/raleway-bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Raleway';
+  src: url('/fonts/raleway-medium.ttf') format('truetype');
+  font-style: normal;
+  font-weight: $font-weight-medium;
+}
+
 
 @font-face {
   font-family: 'Coves';
@@ -33,7 +59,6 @@ $font-weight-light: 300;
   font-style: normal;
   font-weight: bold;
 }
-
 @font-face {
   font-family: 'Coves';
   src: url('/fonts/coves-light.ttf') format('truetype');

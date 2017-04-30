@@ -16,4 +16,4 @@ sass:
   sass_dir: _sass
 
 # LiveReload setting
-livereload: true # gem install guard, guard-jekyll, guard-livereload
+livereload: false # gem install guard, guard-jekyll, guard-livereload

@@ -1,6 +1,7 @@
 ---
 # who styles file
 ---
+@import "global.scss";
 
 body.who{
   .__background_container {
@@ -11,80 +12,70 @@ body.who{
     padding-bottom: 0;
   }    
 }
-#works-container {
-  border-radius: 20px 20px 0 0;
-  margin: 0 auto;
-  width: 960px;
-  background-color: white;
-}
 
-#works-titlebar {
-  position: relative;
-  height: 70px;
-  border-radius: 20px 20px 0 0;
-  background: #EDEDED; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(#EDEDED, #E7E7E7); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#EDEDED, #E7E7E7); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#EDEDED, #E7E7E7); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#EDEDED, #E7E7E7); /* Standard syntax */
-}
-
-#corner-circles {
-  position: absolute;
-  left: 30px;
-  top: 13px;
-  width: 100px;
-  height: 15px;
-}
-
-.small-circle {
-  display: inline-block;
-  border-radius: 3.5px;
-  background-color: white;
-  height: 7px;
-  width: 7px;
-  margin-right: 3px;
-}
-
-.small-circle.red {
-  background-color: #ff6159;
-}
-
-.small-circle.orange {
-  background-color: #ffbe2f;
-}
-
-.small-circle.green {
-  background-color: #29cb42;
-}
-
-#tag-container {
-  font-family: Avenir;
-  font-size: 14px;
-  text-align: center;
-  list-style: none;
-  padding-top: 23px;
-  li {
-    cursor: pointer;
-    border-radius: 100px;
-    display: inline-block;
-    padding: 5px 18px;
-    margin-left: 20px;
-    }
-}
-
-#works-body {
-  font-family: Avenir;
+#who-body {
+  font-family: 'Raleway';
+  color: #4a4a4a;
   font-size: 30px;
   text-align: left;
-  padding-top: 0px;    
-  background-color: white;
-  min-height: 500px;
+  padding: 100px 150px;
+  height: 800px;
+}
+
+#titlebar-img {
+  position: absolute;
+  top: -60px;
+  right: 170px;
+}
+
+#profile-header {
   display: flex;
+  align-items: flex-end;
+  #profile-image {
+    display: block;
+    flex: 0 0 200px;
+  }
+  #profile-header-titles {
+    flex: 1;
+    padding-left: 70px;
+  }
 }
 
-.__profile_img {
-  margin-top: 60px;
-  margin-left: 200px;
+#profile-image {
+  height: 200px;
 }
 
+#profile-header-titles {
+  h1 {
+    font-weight: $font-weight-light;
+    font-size: 44px;
+    letter-spacing: 0.4em;
+    margin: -10px 0;
+  }
+  h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #ef6261;
+    margin: 5px 0;
+  }
+}
+
+#profile-body {
+  margin-top: 40px;
+  h1 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  p {
+    text-align: justify;
+    font-size: 24px;
+    margin-bottom: 60px;
+  }
+  .button {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 18px 35px;
+    border-radius: 200px;
+    border: 3px solid black;
+  }
+}

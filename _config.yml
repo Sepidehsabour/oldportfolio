@@ -2,7 +2,7 @@
 
 # Plugins
 gems: [kramdown]
-livereload: true # gem install guard, jekyll-guard
+livereload: true # gem install guard, guard-jekyll, guard-livereload
 
 # Build settings
 markdown: kramdown
@@ -10,3 +10,6 @@ markdown: kramdown
 # Sass settings
 sass:
   sass_dir: _sass
+
+# LiveReload setting
+livereload: true

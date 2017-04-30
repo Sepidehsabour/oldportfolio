@@ -1,11 +1,116 @@
 ---
 # contact styles file
 ---
+@import 'global.scss';
 
-body.contact{
-  .__background_container {
-    background-image: url('/images/background-contact.svg');
-    
+body.contact {
+  #layer-rear {
+    .__background_container {
+      background-image: url('/images/background-contact.svg') !important;
+    }
+  }
+  #layer-common-inner {
+    pointer-events:none;
+  }
+  .__main_body {
+    padding-top: 300px;
   }
 }
 
+.span-lefthalf {
+  width: 50%;
+}
+
+.span-righthalf {
+  position: relative;
+  left: 50%;
+  width: 50%;
+}
+
+#contact-form {
+  padding-left: 60px;
+
+  #contact-pencil {
+    position: absolute;
+    left: 160px;
+    top: 140px;
+    opacity: 0.8;
+    pointer-events: none;
+  }
+
+  #contact-pencil:hover {
+  }
+
+  input, textarea {
+    border: #dedede 1px solid;
+    background: #f6f6f6 no-repeat;
+    background-position: 17px 50%;
+    border-radius: 5px;
+    color: #6c6c6c;
+    font-size: 14px;
+  }
+
+  .contact-input {
+    padding-left: 50px;
+    width: 235px;
+    margin-right: 5px;
+    margin-bottom: 7px;
+    height: 48px;
+  }
+
+  #contact-name {
+    background-image: url('../images/input-user.svg');
+  }
+
+  #contact-email {
+    background-image: url('../images/input-mail.svg');
+  }
+
+  #contact-body {
+    padding: 17px;
+    width: 480px;
+    border: #dedede 1px solid;
+    border-radius: 5px;
+    color: #6c6c6c;
+    font-size: 14px;
+    height: 180px;
+  }
+
+  #contact-submit {
+    margin-top: 10px;
+    font-family: Coves;
+    font-weight: $font-weight-light;
+    font-size: 12px;
+    letter-spacing: 0.3em;
+    display: block;
+    border: none;
+    color: white;
+    background-color: #7ba6ce;
+    border-radius: 100px;
+    width: 160px;
+    height: 45px;
+    box-shadow: 2px 2px #00000066;
+  }
+
+  #contact-submit:active {
+    transform: translate(2px,2px);
+    box-shadow: none;
+  }
+}
+
+#contact-content {
+  font-family: Coves;
+  margin-left: 50px;
+  font-size: 50px;
+  width: 430px;
+  color: #264c44;
+  font-weight: $font-weight-light;
+}
+
+#contact-icons {
+  margin-top: 45px;
+  margin-left: 50px;
+  a {
+    margin-right: 35px;
+  }
+}

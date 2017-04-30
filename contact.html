@@ -1,24 +1,64 @@
 ---
-#contact html file
+# contact file
 ---
 
 <html class="no-js" lang="">
-    <head>
+<head>
     {% include website-head.html %}
-    </head>
-    <body class="contact">
-     <div class="__background_container">
-      <div class="__main_container">
-       {% include site-headerbar.html %}
-        <div class="__main_body">
-            
-         
-            
-        </div>   
-      </div> 
-     </div>
-    </body>
-{% if site.livereload == true %}
-  <script src="http://localhost:35729/livereload.js"></script>
-{% endif %}
+</head>
+<body class="contact">
+<div id="layer-common-inner" class="inner-container">
+    <div class="__background_container">
+        <div class="__main_container">
+            {% include site-headerbar.html %}
+        </div>
+    </div>
+</div>
+<div id="layer-rear" class="inner-container">
+    <div class="__background_container overlay">
+        <div class="__main_container">
+            <div class="__main_header"></div>
+            <div class="__main_body">
+                <div class="span-righthalf">
+                    <form id="contact-form" method="post">
+                        <img id="contact-pencil" src="images/pencil-contact.png">
+                        <input class="contact-input" id="contact-name" type="text" name="name" placeholder="Name">
+                        <input class="contact-input" id="contact-email" type="text" name="email" placeholder="Email">
+                        <textarea id="contact-body" placeholder="Your Message" name="body"></textarea>
+                        <input id="contact-submit" type="submit" value="SEND">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="layer-front-cover" class="outer-container">
+    <div id="layer-front" class="inner-container">
+        <div class="__background_container overlay">
+            <div class="__main_container">
+                <div class="__main_header"></div>
+                <div class="__main_body">
+                    <div class="span-lefthalf">
+                        <div id="contact-content">
+                            For more information or just to say hello, feel free to get in touch.
+                        </div>
+                        <div id="contact-icons">
+                            <a href="#">
+                                <img src="images/social-facebook.svg">
+                            </a>
+                            <a href="#">
+                                <img src="images/social-twitter.svg">
+                            </a>
+                            <a href="#">
+                                <img src="images/social-linkedin.svg">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+{% include site-livereload.html %}
 </html>

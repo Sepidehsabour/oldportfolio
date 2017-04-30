@@ -12,82 +12,90 @@ body.what {
 }
 
 #__carousel_items_wrapper {
-  margin: 0 auto;
+  margin: -10px auto;
   width: 1050px;
-  height: 630px;
+  height: 800px;
 }
 
 .__carousel_item {
   position: relative;
-  height: 700px !important;
+  height: 900px !important;
+  /** first carousel **/
+  $laptop-base: 120px;
   .__laptop_img {
     position: absolute;
-    top: 40px;  
-    }    
-  .__phone_img {
-    position: absolute;
-    top: 10px;
-    right: 140px;
-  }
-  .__tablet_img {
-    position: absolute;
-    left: 130px;
-    top: 80px;
+    top: $laptop-base;
   }
   .__gramophone_img {
     position: absolute;
-    top: 240px;
+    top: $laptop-base + 200px;
+  }
+  /** second carousel **/
+  $phone-base: 100px;
+  .__tablet_img {
+    position: absolute;
+    left: 130px;
+    top: $phone-base + 70px;
+  }
+  .__phone_img {
+    position: absolute;
+    top: $phone-base;
+    right: 140px;
   }
   .__gamepad_img {
     position: absolute;
     top: 440px;
-    right: 20px;
+    right: $phone-base + 10px;
+  }
+  /** third carousel **/
+  $notebook-base: 120px;
+  .__props_img {
+    position: absolute;
+    top: $notebook-base - 120px;
+    left:70px;
   }
   .__notebook_img {
     position:absolute;
-    top:30px;
+    top: $notebook-base;
     right:300px;  
-    }
+  }
   .__glass_img {
     position: absolute;
-    top:390px;
+    top: $notebook-base + 360px;
     right: 140px;  
-    }
+  }
   .__envelope_img {
     position: absolute;
-    top: 60px;
+    top: $notebook-base + 30px;
     right: 270px;
-    }    
-    .__props_img {
+  }
+  .__floppy_img {
     position: absolute;
-    right:770px;    
-    }
-    .__floppy_img {
-    position: absolute;
-    top: 320px;
+    top: $notebook-base + 290px;
     right: 190px;    
-    }
-    .__model_img {
+  }
+  .__model_img {
     position: absolute;
-    top: 460px;  
-    right:650px;    
-    }
-    .__pencil_img {
+    top: $notebook-base + 430px;
+    right: 650px;
+  }
+  .__pencil_img {
     position: absolute;
-    top:280px;
-    right:280px;    
-    }
-    .__chalkboard_img {
+    top: $notebook-base + 250px;
+    right: 280px;
+  }
+  /** forth carousel **/
+  $chalkboard-base: 140px;
+  .__chalkboard_img {
     position: absolute;
-    top: 40px;
+    top: $chalkboard-base;
     left: 150px;    
-    }
-    .__bomb_img {
+  }
+  .__bomb_img {
     position: absolute;
-    top: 360px;    
+    top: $chalkboard-base + 320px;
     right: 630px;
-    }
-
+  }
 }
 
 .__phone_img {
@@ -159,7 +167,7 @@ body.what {
     text-align: justify;
     font-size: 16px;
     line-height: 18px;
-    color: white;
+    color: #989595;
     height: 577px;
     background: url("/images/chalkboard.png") no-repeat; 
     .title{

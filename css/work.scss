@@ -134,6 +134,7 @@ body.work{
 
 .fullscreen-view {
   position: fixed;
+  z-index: 100;
   background-color: rgba(204, 201, 201, 0.9);
   top: 0;
   left: 0;

@@ -40,6 +40,14 @@ class PictureThumbnails extends React.Component {
     } else if (row.thumbnail) {
       style.backgroundImage = `url(${row.thumbnail})`;
     }
+    if (row.spanRight === true) {
+      style.width = 'calc(200% + 5px)';
+      style.position = 'relative';
+      style.zIndex = 1;
+    }
+    if (row.invisible === true) {
+      style.visibility = 'hidden';
+    }
     return style;
   }
   renderColumnElements(column, colIdx) {
@@ -47,7 +55,7 @@ class PictureThumbnails extends React.Component {
         return (
           <a key={`item${colIdx}-${idx}`}
              href="#"
-             className="single-work"
+             className={"single-work"}
              style={this.computeStyle(row)}
              onClick={() => this.thumbnailClick(row)}>
           </a>

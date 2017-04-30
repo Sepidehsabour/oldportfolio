@@ -101,10 +101,10 @@ body {
   #layer-common-inner {
     z-index: 300;
   }
-  #layer-art-inner {
+  #layer-rear {
     z-index: 100;
   }
-  #layer-eng-outer {
+  #layer-front-cover {
     z-index: 200;
     width: 50%;
     height: 1080px;
@@ -112,15 +112,15 @@ body {
     overflow-x: hidden;
     transition: $page-transition;
   }
-  #layer-eng-outer.focused {
+  #layer-front-cover.focused {
     width: 100% !important;
   }
-  #layer-eng-outer.unfocused {
+  #layer-front-cover.unfocused {
     width: 0 !important;
   }
 }
 
-#layer-art-inner .__background_container {
+#layer-rear .__background_container {
   background: url('/images/background-home.svg') no-repeat 50% 0;
   background-size: 1920px 1080px;
   .__mobile_screen {
@@ -146,7 +146,7 @@ body {
   }
 }
 
-#layer-eng-inner .__background_container {
+#layer-front .__background_container {
   background: white;
   background-size: 1920px 1080px;
   #__macintosh {

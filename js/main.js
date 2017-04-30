@@ -1,11 +1,19 @@
 $(document).ready(function () {
   setupMainPage();
   setupWhatPage();
+  setupContactPage();
 });
+
+function bindElementsWidth(ref, target) {
+  $(window).resize(function() {
+    target.width(ref.width());
+  });
+  target.width(ref.width());
+}
 
 function setupMainPage() {
   function goArt() {
-    $("#layer-eng-outer")
+    $("#layer-front-cover")
       .addClass("unfocused")
       .removeClass("focused");
     $("#__paint_bucket, #__palette")
@@ -17,7 +25,7 @@ function setupMainPage() {
   }
 
   function goEng() {
-    $("#layer-eng-outer")
+    $("#layer-front-cover")
       .removeClass("unfocused")
       .addClass("focused");
     $("#__paint_bucket, #__palette")
@@ -29,7 +37,7 @@ function setupMainPage() {
   }
 
   function goNeutral() {
-    $("#layer-eng-outer")
+    $("#layer-front-cover")
       .removeClass("unfocused")
       .removeClass("focused");
     $("#__paint_bucket, #__palette")
@@ -41,7 +49,7 @@ function setupMainPage() {
   }
 
   function goAccordingToMousePosition() {
-    var body = $("#layer-common-inner .__background_container");
+    var body = $(".home #layer-common-inner .__background_container");
     body.mousemove(function (event) {
       var mousePos = (event.pageX - body.offset().left) * 100 / body.width();
       if (mousePos <= 40) {
@@ -56,18 +64,22 @@ function setupMainPage() {
     });
   }
 
-  function bindElementsWidth(ref, target) {
-    $(window).resize(function() {
-      target.width(ref.width());
-    });
-    target.width(ref.width());
-  }
-
-  bindElementsWidth($("#layer-art-inner"), $("#layer-eng-inner"));
+  bindElementsWidth($("#layer-rear"), $("#layer-front"));
   goAccordingToMousePosition();
 }
 
 function setupWhatPage() {
+  $(document).ready(function(){
+    $('#__carousel_items_wrapper').slick({
+      dots: true,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 1
+    });
+  });
+}
+
+function setupContactPage() {
   $(document).ready(function(){
     $('#__carousel_items_wrapper').slick({
       dots: true,

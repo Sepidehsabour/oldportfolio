@@ -125,6 +125,14 @@ body.work{
     display: flex;
     text-align: center;
     justify-content: center;
+    img {
+      transition: all 0.3s;
+    }
+  }
+  a:hover {
+    img {
+      transform: scale(1.7);
+    }
   }
 }
 

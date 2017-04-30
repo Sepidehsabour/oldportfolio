@@ -5,6 +5,59 @@
 <html class="no-js" lang="">
   <head>
     {% include website-head.html %}
+    <script src="js/react-15.5.4.min.js"></script>
+    <script src="js/react-dom-15.5.4.min.js"></script>
+    <script lang="javascript">
+      var works = [
+        [ // FIRST COLUMN
+          {
+            thumbnailHeight: 300,
+            thumbnail: 'images/work/work000-thumb.jpg',
+            picture: 'images/work/work000.jpg'
+          },
+          {
+            thumbnailHeight: 200,
+            thumbnailColor: '#a17dcd'
+          },
+          {
+            thumbnailHeight: 300,
+            thumbnailColor: '#27CC34'
+          },
+          {
+            thumbnailHeight: 400,
+            thumbnailColor: '#8B572A'
+          }
+        ],
+        [ // SECOND COLUMN
+          {
+            thumbnailHeight: 400,
+            thumbnailColor: '#55c6cd'
+          },
+          {
+            thumbnailHeight: 300,
+            thumbnailColor: '#F6A623'
+          },
+          {
+            thumbnailHeight: 300,
+            thumbnailColor: '#F8D01C'
+          }
+        ],
+        [ // THIRD COLUMN
+          {
+            thumbnailHeight: 200,
+            thumbnailColor: '#cd7d43'
+          },
+          {
+            thumbnailHeight: 500,
+            thumbnailColor: '#cdc342'
+          },
+          {
+            thumbnailHeight: 400,
+            thumbnailColor: '#D0011B'
+          }
+        ]
+      ]
+    </script>
   </head>
   <body class="work">
   <div class="__background_container">
@@ -26,38 +79,16 @@
               </ul>
             </div>
             <div id="works-body">
-              <div class="works-body-column">
-                  <a href="projects/example1.html" >
-                <div class="single-work" style="background: url('images/work/project-1.jpg'); height: 300px;">
-                </div></a>
-                <div class="single-work" style="background-color: #a17dcd; height: 200px">
-                </div>
-                <div class="single-work" style="background-color: #27CC34; height: 300px">
-                </div>    
-                <div class="single-work" style="background-color: #8B572A; height: 400px">
-                </div>  
-              </div>
-              <div class="works-body-column">
-                <div class="single-work" style="background-color: #55c6cd; height: 400px">
-                </div>
-                <div class="single-work" style="background-color: #F6A623; height: 300px">
-                </div>  
-                <div class="single-work" style="background-color: #F8D01C; height: 300px">
-                </div>  
-              </div>
-              <div class="works-body-column">
-                <div class="single-work" style="background-color: #cd7d43; height: 200px">
-                </div>
-                <div class="single-work" style="background-color: #cdc342; height: 500px">
-                </div>
-                <div class="single-work" style="background-color: #D0011B; height: 400px"> 
-                </div>  
-              </div>
+              <!--REACT FILLED AREA-->
             </div>
           </div>
         </div>
       </div>
   </div>
+  <div class="fullscreen-view hidden" id="works-scroller">
+    <!--REACT FILLED AREA-->
+  </div>
+  <script src="js/works.js"></script>
 </body>
 {% include site-livereload.html %}
 </html>

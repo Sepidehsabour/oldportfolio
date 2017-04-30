@@ -1,15 +1,19 @@
 # Site settings
 
 # Plugins
-gems: [kramdown]
-livereload: true # gem install guard, guard-jekyll, guard-livereload
+gems:
+  - kramdown
+  - jekyll-babel # gem install jekyll-babel
 
 # Build settings
 markdown: kramdown
+
+# Babel settings
+babel_js_extensions: 'jsx'
 
 # Sass settings
 sass:
   sass_dir: _sass
 
 # LiveReload setting
-livereload: true
+livereload: true # gem install guard, guard-jekyll, guard-livereload

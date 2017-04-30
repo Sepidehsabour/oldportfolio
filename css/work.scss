@@ -5,6 +5,7 @@
 body.work{
   .__background_container {
     background-image: url('/images/background-work.svg');
+    background-color: #9ec5dd;
   }
   .__main_body {
     padding-top: 80px;
@@ -81,13 +82,14 @@ body.work{
   }
 }
 
-#works-body {
+#works-body > div {
   background-color: white;
   min-height: 500px;
   display: flex;
 }
 
 .single-work {
+  display: block;
   cursor: pointer;
 }
 
@@ -106,4 +108,36 @@ body.work{
   .single-work {
     margin-bottom: 5px;
   }
+}
+
+#controllers-wrapper {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  right: 0;
+  padding: 10px 0;
+  background: white;
+  width: 80px;
+  height: 160px;
+  a {
+    flex: 1 1;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+.hidden {
+  display: none !important;
+}
+
+.fullscreen-view {
+  position: fixed;
+  background-color: rgba(204, 201, 201, 0.9);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
 }

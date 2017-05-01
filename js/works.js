@@ -151,6 +151,7 @@ var PictureBrowser = (function (_React$Component2) {
       var _this3 = this;
 
       $('#works-scroller').removeClass("hidden");
+      $('body').css('overflow', 'hidden');
       return React.createElement(
         'div',
         null,
@@ -188,6 +189,7 @@ var PictureBrowser = (function (_React$Component2) {
     key: 'hideFullscreenViewer',
     value: function hideFullscreenViewer() {
       $('#works-scroller').addClass("hidden");
+      $('body').css('overflow', 'auto');
       return null;
     }
   }, {

@@ -99,6 +99,7 @@ class PictureBrowser extends React.Component {
   }
   showFullscreenViewer() {
     $('#works-scroller').removeClass("hidden");
+    $('body').css('overflow','hidden');
     return (
       <div>
         <div id="controllers-wrapper">
@@ -118,6 +119,7 @@ class PictureBrowser extends React.Component {
   }
   hideFullscreenViewer() {
     $('#works-scroller').addClass("hidden");
+    $('body').css('overflow','auto');
     return null;
   }
   render() {

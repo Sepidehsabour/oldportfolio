@@ -82,4 +82,7 @@ function setupWhatPage() {
 }
 
 function setupContactPage() {
+  $('#works-scroller').scroll(function (e) {
+    $('#controllers-wrapper').css('top', e.target.scrollTop);
+  });
 }

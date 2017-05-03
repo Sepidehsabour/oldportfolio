@@ -4,6 +4,7 @@
 @import 'global.scss';
 
 body.contact {
+  position: relative;
   #layer-rear {
     .__background_container {
       background-image: url('/images/background-contact.svg') !important;

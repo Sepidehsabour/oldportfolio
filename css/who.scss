@@ -13,19 +13,21 @@ body.who{
   }    
 }
 
+$who-contents-top-base: 40px;
+
 #who-body {
   font-family: 'Raleway';
   color: #4a4a4a;
   font-size: 30px;
   text-align: left;
-  padding: 100px 150px;
+  padding: $who-contents-top-base 150px 0;
   height: 800px;
 }
 
 #titlebar-img {
   position: absolute;
   top: -60px;
-  right: 170px;
+  right: 100px;
 }
 
 #profile-header {

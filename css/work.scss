@@ -13,16 +13,18 @@ body.work{
   }
 }
 
-#works-container {
+$work-contents-top-base: -70px;
+
+#macos-window-container {
   border-radius: 20px 20px 0 0;
-  margin: 0 auto;
+  margin: $work-contents-top-base auto 0;
   width: 960px;
   background-color: white;
 }
 
-#works-titlebar {
+#macos-window-titlebar {
   position: relative;
-  height: 70px;
+  height: 50px;
   border-radius: 20px 20px 0 0;
   background: #EDEDED; /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(#EDEDED, #E7E7E7); /* For Safari 5.1 to 6.0 */
@@ -65,7 +67,7 @@ body.work{
   font-size: 14px;
   text-align: center;
   list-style: none;
-  padding-top: 23px;
+  padding-top: 13px;
   li {
     cursor: pointer;
     border-radius: 100px;

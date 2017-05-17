@@ -14,7 +14,7 @@ body.contact {
     pointer-events:none;
   }
   .__main_body {
-    padding-top: 300px;
+    padding-top: 260px;
   }
 }
 
@@ -28,13 +28,15 @@ body.contact {
   width: 50%;
 }
 
+$contact-form-top-base: 60px;
+
 #contact-form {
   padding-left: 60px;
 
   #contact-pencil {
     position: absolute;
     left: 160px;
-    top: 140px;
+    top: $contact-form-top-base + 40px;
     opacity: 0.8;
     pointer-events: none;
   }

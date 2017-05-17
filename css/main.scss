@@ -76,6 +76,8 @@ a {
 
 // ----------- main styles
 
+$contents-top-base: -20px;
+
 body {
     margin-top: 0;
     margin-left: 0;
@@ -253,7 +255,7 @@ body {
   height: 900px;
   .__mobile_container {
     position: absolute;
-    top: 155px;
+    top: $contents-top-base + 55px;
     left: 50%;
     margin-left: -142px;
   }
@@ -299,7 +301,7 @@ body {
 
 #__mobile_leftcontainer {
   position: absolute;
-  top: 325px;
+  top: $contents-top-base + 225px;
   left: 60px;
 
   font-family:"Coves";
@@ -313,7 +315,7 @@ body {
 
 #__mobile_rightcontainer {
   position: absolute;
-  top: 325px;
+  top: $contents-top-base + 225px;
   right: 60px;
 
   font-family:"Coves";

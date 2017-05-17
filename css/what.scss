@@ -12,16 +12,20 @@ body.what {
 }
 
 #__carousel_items_wrapper {
-  margin: -10px auto;
+  margin: 0px auto;
   width: 1050px;
-  height: 800px;
+  height: 640px;
+}
+
+.slick-list {
+  overflow-y: visible !important;
 }
 
 .__carousel_item {
   position: relative;
   height: 900px !important;
   /** first carousel **/
-  $laptop-base: 120px;
+  $laptop-base: 40px;
   .__laptop_img {
     position: absolute;
     top: $laptop-base;
@@ -31,7 +35,7 @@ body.what {
     top: $laptop-base + 200px;
   }
   /** second carousel **/
-  $phone-base: 100px;
+  $phone-base: 20px;
   .__tablet_img {
     position: absolute;
     left: 130px;
@@ -48,11 +52,11 @@ body.what {
     right: $phone-base + 10px;
   }
   /** third carousel **/
-  $notebook-base: 120px;
+  $notebook-base: 40px;
   .__props_img {
     position: absolute;
-    top: $notebook-base - 120px;
-    left:70px;
+    top: $notebook-base - 40px;
+    left: 100px;
   }
   .__notebook_img {
     position:absolute;
@@ -76,8 +80,8 @@ body.what {
   }
   .__model_img {
     position: absolute;
-    top: $notebook-base + 430px;
-    right: 650px;
+    top: $notebook-base + 380px;
+    left: 90px;
   }
   .__pencil_img {
     position: absolute;
@@ -85,7 +89,7 @@ body.what {
     right: 280px;
   }
   /** forth carousel **/
-  $chalkboard-base: 140px;
+  $chalkboard-base: 20px;
   .__chalkboard_img {
     position: absolute;
     top: $chalkboard-base;

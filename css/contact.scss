@@ -80,7 +80,7 @@ $contact-form-top-base: 60px;
   }
 
   #contact-submit {
-    margin-top: 10px;
+    margin: 15px 5px;
     font-family: Coves;
     font-weight: $font-weight-light;
     font-size: 12px;
@@ -92,7 +92,7 @@ $contact-form-top-base: 60px;
     border-radius: 100px;
     width: 160px;
     height: 45px;
-    box-shadow: 2px 2px #00000066;
+    box-shadow: 1.5px 1.5px #00000066;
   }
 
   #contact-submit:active {

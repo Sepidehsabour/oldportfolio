@@ -1,5 +1,6 @@
 $(document).ready(function () {
   setupMainPage();
+  setupWhoPage();
   setupWhatPage();
   setupContactPage();
 });
@@ -67,6 +68,19 @@ function setupMainPage() {
   bindElementsWidth($("#layer-rear"), $("#layer-front"));
   $("#layer-front-cover").animate({width: '50%'});
   goAccordingToMousePosition();
+}
+
+function setupWhoPage() {
+  $("#who-body .profile-header").hover(
+    function() {
+      $("#titlebar-img")
+        .addClass($(this).attr("add-class-to-titlebar-img"));
+    }, function() {
+      $("#titlebar-img")
+        .removeClass("on-nima")
+        .removeClass("on-sepideh");
+    }
+  );
 }
 
 function setupWhatPage() {

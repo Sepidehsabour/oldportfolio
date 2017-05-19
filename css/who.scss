@@ -31,6 +31,18 @@ $who-contents-top-base: 40px;
   position: absolute;
   top: -60px;
   right: 100px;
+  pointer-events:none;
+  transition: all 0.4s cubic-bezier(.54,-.53,0,1.06);
+}
+
+#titlebar-img.on-nima {
+  top: 137px;
+  right: 191px;
+}
+
+#titlebar-img.on-sepideh {
+  top: 129px;
+  right: 580px;
 }
 
 .profile-header {
